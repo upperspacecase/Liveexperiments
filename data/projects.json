@@ -1,0 +1,34 @@
+[
+  {
+    "vercelProjectName": "nature-club",
+    "displayName": "Nature Club",
+    "status": "live",
+    "tagline": "Getting people offline through micro-adventures",
+    "hypothesis": "If we reduce the friction of planning outdoor activities to a single tap, more people will actually go outside on weekends.",
+    "learnings": "Push notifications at 6pm Friday convert 3x better than morning sends. People don't lack motivation — they lack a nudge at the right moment.",
+    "featured": true
+  },
+  {
+    "vercelProjectName": "wave-check",
+    "displayName": "Wave Check",
+    "status": "building",
+    "tagline": "Surf condition alerts for Ericeira",
+    "hypothesis": "Surfers check 4 different apps every morning. One SMS with the verdict would save 15 minutes and reduce decision fatigue."
+  },
+  {
+    "vercelProjectName": "analog-hour",
+    "displayName": "Analog Hour",
+    "status": "paused",
+    "tagline": "A browser extension that blocks everything for one hour",
+    "hypothesis": "Forcing a daily offline hour would improve self-reported wellbeing scores over 30 days.",
+    "learnings": "Built the MVP but realized the Chrome Web Store review process would delay launch by weeks. Paused to focus on Nature Club instead. Might revisit as a mobile app."
+  },
+  {
+    "vercelProjectName": "trail-notes",
+    "displayName": "Trail Notes",
+    "status": "archived",
+    "tagline": "Markdown trail journals with GPS embeds",
+    "hypothesis": "Hikers want a dead-simple way to journal trails without leaving the terminal.",
+    "learnings": "Too niche. The 12 people who loved it REALLY loved it, but couldn't find a growth channel. Good tech, wrong market."
+  }
+]

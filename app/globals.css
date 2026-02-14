@@ -1,0 +1,107 @@
+/* ─── Design Tokens ─── */
+:root {
+  /* Color */
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --text-tertiary: #a0a0a0;
+  --border: #e8e8e8;
+  --border-hover: #d4d4d4;
+  --accent: #1a1a1a;
+
+  /* Status */
+  --status-live: #22c55e;
+  --status-building: #f59e0b;
+  --status-paused: #a0a0a0;
+  --status-archived: #d4d4d4;
+
+  /* Spacing */
+  --page-max-width: 1200px;
+  --page-padding: clamp(1.5rem, 4vw, 4rem);
+  --card-gap: 2rem;
+  --section-spacing: 6rem;
+  --card-padding: 2rem;
+  --card-radius: 12px;
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", monospace;
+
+  --heading-large: clamp(2rem, 4vw, 3.5rem);
+  --heading-small: 1.125rem;
+  --body: 1rem;
+  --caption: 0.8125rem;
+  --mono-size: 0.75rem;
+
+  /* Motion */
+  --transition: 0.3s ease;
+  --stagger-delay: 60ms;
+}
+
+/* ─── Reset ─── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--body);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ─── Status Dot Pulse ─── */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ─── Card Enter Animation ─── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Ken Burns drift on OG images ─── */
+@keyframes kenBurns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.03);
+  }
+}
